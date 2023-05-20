@@ -3,12 +3,15 @@
 
 # pseudocode
 # creating class "Calculator" 
+class Calculator:
+    def __init__ (self:)
 # ask for input 1
 # ask for input 2
+
 # ask for operation
 # define add functions
 # define subtract functions
 # define multiplication functions
 # define division function
 # add try and except/limitations
-# show output
+# show output               
