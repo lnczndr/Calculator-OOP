@@ -21,8 +21,11 @@ class UserInterface:
 # show output for subtraction
     def subtract_output (self, diff):
         print ("ANSWER: ", diff)
-        
+
 # define multiplication functions
+    def multiply_output (self, product):
+        print ("ANSWER: ", product)
+        
 # define division function
 # add try and except/limitations
 # show output               

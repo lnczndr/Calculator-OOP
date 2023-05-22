@@ -15,6 +15,10 @@ class Calculator:
         return diff
     
 # define multiplication functions
+    def multiply_input (self, inp_num1, inp_num2):
+        product = inp_num1 * inp_num2
+        return product
+    
 # define division function
 # add try and except/limitations
 # show output               

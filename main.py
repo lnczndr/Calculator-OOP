@@ -22,13 +22,17 @@ if inp_operation == "+":
     sum = calcu.add_input (inp_num1, inp_num2)
     user_int.add_output(sum)
 
+# using the subtract function
 elif inp_operation == "-":
     diff = calcu.subtract_input (inp_num1, inp_num2)
     user_int.add_output(diff)
 
-# define subtract functions
-# define multiplication functions
-# define division function
+# using the multiply function
+elif inp_operation == "*":
+    product = calcu.multiply_input (inp_num1, inp_num2)
+    user_int.add_output(product)
+
+# using the division function
 # add try and except/limitations
 # show output
     
