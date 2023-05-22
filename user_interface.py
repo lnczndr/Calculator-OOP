@@ -2,7 +2,7 @@
 # CALCULATOR USING OOP CONCEPT
 
 # pseudocode
-# creating class for "User Interface" 
+# creating class for "UserInterface" 
 class UserInterface:
 # ask for input
     def input_num (self):
