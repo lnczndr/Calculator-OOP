@@ -20,7 +20,7 @@ inp_operation = user_int.ask_operation()
 # using the add function
 if inp_operation == "+":
     sum = calcu.add_input (inp_num1, inp_num2)
-    user_int.add_output(sum)
+    print ("ANSWER: ", user_int.add_output(sum))
 
 # define subtract functions
 # define multiplication functions

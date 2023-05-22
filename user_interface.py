@@ -14,6 +14,10 @@ class UserInterface:
         operation = (input("ENTER OPERATION (+, -, *, /): "))
         return operation
     
+# show output for operation
+    def add_output (self, sum):
+        print ("ANSWER: ", sum)
+    
 # define add functions
 # define subtract functions
 # define multiplication functions
