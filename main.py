@@ -1,6 +1,8 @@
 # LANA CAZANDRA U. LEGASPI - BSCPE 1-5
 # CALCULATOR USING OOP CONCEPT
 
+import time
+
 from user_interface import UserInterface
 from calculator import Calculator
 
@@ -11,11 +13,11 @@ calcu = Calculator()
 # ask for input
 repeat_prog ="y"
 while repeat_prog =="y":
+    user_int.design()
+    # asking username
+    user_int.ask_user()
 
-    try:
-        # asking username
-        user_int.ask_user()
-
+    try:    
         # input 1
         inp_num1 = user_int.input_num()
         print ()

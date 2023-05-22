@@ -36,3 +36,13 @@ class UserInterface:
         username = input("\nEnter username: ")
         print ("\nWelcome to the Calculator, ", username, "!")
         print ()
+
+# define designs:
+    def design (self):
+        from pyfiglet import Figlet
+        font_name = "Block"
+        custom_fig = Figlet (font=font_name)
+        title = custom_fig.renderText("SIMPLE CALCU")
+        print ("-" * 150)
+        print (title)
+        print ("-" * 150)
