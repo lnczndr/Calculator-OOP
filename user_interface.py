@@ -25,7 +25,10 @@ class UserInterface:
 # define multiplication functions
     def multiply_output (self, product):
         print ("ANSWER: ", product)
-        
+
 # define division function
+    def divide_output (self, quotient):
+        print ("ANSWER: ", quotient)
+
 # add try and except/limitations
 # show output               

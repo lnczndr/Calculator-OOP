@@ -25,14 +25,18 @@ if inp_operation == "+":
 # using the subtract function
 elif inp_operation == "-":
     diff = calcu.subtract_input (inp_num1, inp_num2)
-    user_int.add_output(diff)
+    user_int.subtract_output(diff)
 
 # using the multiply function
 elif inp_operation == "*":
     product = calcu.multiply_input (inp_num1, inp_num2)
-    user_int.add_output(product)
+    user_int.multiply_output(product)
 
 # using the division function
+elif inp_operation == "/":
+    quotient = calcu.divide_input (inp_num1, inp_num2)
+    user_int.divide_output(quotient)
+
 # add try and except/limitations
 # show output
     
