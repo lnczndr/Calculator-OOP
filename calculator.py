@@ -23,6 +23,6 @@ class Calculator:
     def divide_input (self, inp_num1, inp_num2):
         quotient = inp_num1 / inp_num2
         return quotient
-        
+            
 # add try and except/limitations
 # show output               

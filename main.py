@@ -18,25 +18,28 @@ inp_num2 = user_int.input_num()
 inp_operation = user_int.ask_operation()
 
 # using the add function
-if inp_operation == "+":
-    sum = calcu.add_input (inp_num1, inp_num2)
-    user_int.add_output(sum)
+try:
+    if inp_operation == "+":
+        sum = calcu.add_input (inp_num1, inp_num2)
+        user_int.add_output(sum)
 
-# using the subtract function
-elif inp_operation == "-":
-    diff = calcu.subtract_input (inp_num1, inp_num2)
-    user_int.subtract_output(diff)
+    # using the subtract function
+    elif inp_operation == "-":
+        diff = calcu.subtract_input (inp_num1, inp_num2)
+        user_int.subtract_output(diff)
 
-# using the multiply function
-elif inp_operation == "*":
-    product = calcu.multiply_input (inp_num1, inp_num2)
-    user_int.multiply_output(product)
+    # using the multiply function
+    elif inp_operation == "*":
+        product = calcu.multiply_input (inp_num1, inp_num2)
+        user_int.multiply_output(product)
 
-# using the division function
-elif inp_operation == "/":
-    quotient = calcu.divide_input (inp_num1, inp_num2)
-    user_int.divide_output(quotient)
-
+    # using the division function
+    elif inp_operation == "/":
+        quotient = calcu.divide_input (inp_num1, inp_num2)
+        user_int.divide_output(quotient)
+except ZeroDivisionError:
+    print ("An ERROR has occured! \nYou can't divide a number to zero.")
+    
 # add try and except/limitations
 # show output
     
