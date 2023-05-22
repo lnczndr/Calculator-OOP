@@ -47,11 +47,11 @@ try:
         quotient = calcu.divide_input (inp_num1, inp_num2)
         user_int.divide_output(quotient)
 
+    else:
+        print ()
+        print ("INVALID OPERATION")
+        
 # adding ZeroDivisionError limitation
 except ZeroDivisionError:
     print ()
-    print ("An ERROR has occured! \nYou can't divide a number to zero.")
-    
-else:
-    print ()
-    print ("INVALID OPERATION")
+    print ("An ERROR has occured! \nYou can't divide a number to zero.")    
