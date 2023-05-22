@@ -16,19 +16,20 @@ class UserInterface:
     
 # show output for addition
     def add_output (self, sum):
+        print ()
         print ("ANSWER: ", sum)
     
 # show output for subtraction
     def subtract_output (self, diff):
+        print ()
         print ("ANSWER: ", diff)
 
 # define multiplication functions
     def multiply_output (self, product):
+        print ()
         print ("ANSWER: ", product)
 
 # define division function
     def divide_output (self, quotient):
+        print ()
         print ("ANSWER: ", quotient)
-
-# add try and except/limitations
-# show output               

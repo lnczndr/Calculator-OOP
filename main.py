@@ -12,11 +12,15 @@ calcu = Calculator()
 try:
     # input 1
     inp_num1 = user_int.input_num()
+    print ()
+
     # input 2
     inp_num2 = user_int.input_num()
+    print ()
 
 # adding ValueError limitation
 except ValueError:
+    print ()
     print ("An ERROR has occured! \nYou need to input float numbers.")
 
 # ask for operation
@@ -45,9 +49,9 @@ try:
 
 # adding ZeroDivisionError limitation
 except ZeroDivisionError:
+    print ()
     print ("An ERROR has occured! \nYou can't divide a number to zero.")
-
-# show output
     
 else:
+    print ()
     print ("INVALID OPERATION")
