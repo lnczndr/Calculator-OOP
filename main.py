@@ -2,13 +2,13 @@
 # CALCULATOR USING OOP CONCEPT
 
 from user_interface import UserInterface
-# pseudocode
 
+# pseudocode
 user_int = UserInterface()
 
 # ask for input
-
 inp_num1 = user_int.input_num()
+inp_num2 = user_int.input_num()
 
 # ask for operation
 # define add functions
