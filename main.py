@@ -9,10 +9,15 @@ user_int = UserInterface()
 calcu = Calculator()
 
 # ask for input
-# input 1
-inp_num1 = user_int.input_num()
-# input 2
-inp_num2 = user_int.input_num()
+try:
+    # input 1
+    inp_num1 = user_int.input_num()
+    # input 2
+    inp_num2 = user_int.input_num()
+
+# adding ValueError limitation
+except ValueError:
+    print ("An ERROR has occured! \nYou need to input float numbers.")
 
 # ask for operation
 inp_operation = user_int.ask_operation()
@@ -37,10 +42,11 @@ try:
     elif inp_operation == "/":
         quotient = calcu.divide_input (inp_num1, inp_num2)
         user_int.divide_output(quotient)
+
+# adding ZeroDivisionError limitation
 except ZeroDivisionError:
     print ("An ERROR has occured! \nYou can't divide a number to zero.")
-    
-# add try and except/limitations
+
 # show output
     
 else:
