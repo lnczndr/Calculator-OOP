@@ -10,6 +10,10 @@ class UserInterface:
         return inp_num
     
 # ask for operation
+    def ask_operation (self):
+        operation = (input("ENTER OPERATION (+, -, *, /): "))
+        return operation
+    
 # define add functions
 # define subtract functions
 # define multiplication functions
