@@ -17,20 +17,22 @@ class UserInterface:
     
 # show output for addition
     def add_output (self, sum):
-        print ()
-        print ("ANSWER: ", sum)
+        print ("\nANSWER: ", sum)
     
 # show output for subtraction
     def subtract_output (self, diff):
-        print ()
-        print ("ANSWER: ", diff)
+        print ("\nANSWER: ", diff)
 
 # define multiplication functions
     def multiply_output (self, product):
-        print ()
-        print ("ANSWER: ", product)
+        print ("\nANSWER: ", product)
 
 # define division function
     def divide_output (self, quotient):
+        print ("\nANSWER: ", quotient)
+
+# define additional details
+    def ask_user (self):
+        username = input("\nEnter username: ")
+        print ("\nWelcome to the Calculator, ", username, "!")
         print ()
-        print ("ANSWER: ", quotient)

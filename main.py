@@ -13,6 +13,9 @@ repeat_prog ="y"
 while repeat_prog =="y":
 
     try:
+        # asking username
+        user_int.ask_user()
+
         # input 1
         inp_num1 = user_int.input_num()
         print ()
@@ -66,5 +69,5 @@ while repeat_prog =="y":
     repeat_prog = input("\nNOTE: Strictly enter 'y' in lowercase. Failure to do so will end the program.\n\nDo you want to run the program again(y/n): ")
 
     if repeat_prog == "n":
-        print ("\nThank you!")
+        print ("\nTHANK YOU!")
         print()
