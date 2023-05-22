@@ -4,6 +4,7 @@
 # pseudocode
 # creating class for "UserInterface" 
 class UserInterface:
+    
 # ask for input
     def input_num (self):
         inp_num = float(input("ENTER NUMBER: "))
