@@ -1,6 +1,8 @@
 # LANA CAZANDRA U. LEGASPI - BSCPE 1-5
 # CALCULATOR USING OOP CONCEPT
 
+from colorama import init, Fore, Back, Style
+init()
 import time
 
 from user_interface import UserInterface
@@ -28,7 +30,7 @@ while repeat_prog =="y":
 
     # adding ValueError limitation
     except ValueError:
-        print ("\nAn ERROR has occured! \nStarting from the first input number, enter a float number to proceed")
+        print (Fore.RED + "\nAn ERROR has occured! \nStarting from the first input number, enter a float number to proceed" +  Style.RESET_ALL)
         print ()
         continue
 
@@ -63,13 +65,13 @@ while repeat_prog =="y":
 
     # adding ZeroDivisionError limitation
     except ZeroDivisionError:
-        print ("\nAn ERROR has occured! \nYou can't divide a number to zero. \nEnter your 2 input numbers again.")
+        print (Fore.RED + "\nAn ERROR has occured! \nYou can't divide a number to zero. \nEnter your 2 input numbers again." +  Style.RESET_ALL)
         print ()
         continue
 
     # asking user if they want to try the program again
-    repeat_prog = input("\nNOTE: Strictly enter 'y' in lowercase. Failure to do so will end the program.\n\nDo you want to run the program again(y/n): ")
+    repeat_prog = input(Fore.LIGHTRED_EX + "\nNOTE: Strictly enter 'y' in lowercase. Failure to do so will end the program.\n\nDo you want to run the program again(y/n): " + Style.RESET_ALL)
 
     if repeat_prog == "n":
-        print ("\nTHANK YOU!")
+        print (Fore.LIGHTRED_EX + "\nTHANK YOU!" + Style.RESET_ALL)
         print()

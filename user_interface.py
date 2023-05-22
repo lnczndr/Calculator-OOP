@@ -3,38 +3,41 @@
 
 # pseudocode
 # creating class for "UserInterface" 
+from colorama import init, Fore, Back, Style
+init()
+
 class UserInterface:
     
 # ask for input
     def input_num (self):
-        inp_num = float(input("ENTER NUMBER: "))
+        inp_num = float(input(Fore.CYAN + "ENTER NUMBER: " + Style.RESET_ALL))
         return inp_num
     
 # ask for operation
     def ask_operation (self):
-        operation = (input("ENTER OPERATION (+, -, *, /): "))
+        operation = (input(Fore.YELLOW + "ENTER OPERATION (+, -, *, /): " + Style.RESET_ALL))
         return operation
     
 # show output for addition
     def add_output (self, sum):
-        print ("\nANSWER: ", sum)
+        print (Fore.MAGENTA + "\nANSWER: ", str(sum) + Style.RESET_ALL)
     
 # show output for subtraction
     def subtract_output (self, diff):
-        print ("\nANSWER: ", diff)
+        print (Fore.MAGENTA + "\nANSWER: ", str(diff) + Style.RESET_ALL)
 
 # define multiplication functions
     def multiply_output (self, product):
-        print ("\nANSWER: ", product)
+        print (Fore.MAGENTA + "\nANSWER: ", str(product) + Style.RESET_ALL)
 
 # define division function
     def divide_output (self, quotient):
-        print ("\nANSWER: ", quotient)
+        print (Fore.MAGENTA + "\nANSWER: "+ str(quotient) + Style.RESET_ALL)
 
 # define additional details
     def ask_user (self):
-        username = input("\nEnter username: ")
-        print ("\nWelcome to the Calculator, ", username, "!")
+        username = input(Fore.BLUE + "\nEnter username: " + Style.RESET_ALL)
+        print (Fore.GREEN + "\nWelcome to the Calculator, ", username, "!" + Style.RESET_ALL)
         print ()
 
 # define designs:
