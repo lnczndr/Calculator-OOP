@@ -9,6 +9,11 @@ class Calculator:
         return sum
     
 # define subtract functions
+    def subtract_input (self, inp_num1, inp_num2):
+        # diff = difference
+        diff = inp_num1 - inp_num2
+        return diff
+    
 # define multiplication functions
 # define division function
 # add try and except/limitations

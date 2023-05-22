@@ -22,6 +22,10 @@ if inp_operation == "+":
     sum = calcu.add_input (inp_num1, inp_num2)
     user_int.add_output(sum)
 
+elif inp_operation == "-":
+    diff = calcu.subtract_input (inp_num1, inp_num2)
+    user_int.add_output(diff)
+
 # define subtract functions
 # define multiplication functions
 # define division function

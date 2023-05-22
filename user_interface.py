@@ -14,12 +14,14 @@ class UserInterface:
         operation = (input("ENTER OPERATION (+, -, *, /): "))
         return operation
     
-# show output for operation
+# show output for addition
     def add_output (self, sum):
         print ("ANSWER: ", sum)
     
-# define add functions
-# define subtract functions
+# show output for subtraction
+    def subtract_output (self, diff):
+        print ("ANSWER: ", diff)
+        
 # define multiplication functions
 # define division function
 # add try and except/limitations
