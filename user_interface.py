@@ -2,12 +2,13 @@
 # CALCULATOR USING OOP CONCEPT
 
 # pseudocode
-# creating class "Calculator" 
-class Calculator:
-    def __init__ (self:)
-# ask for input 1
-# ask for input 2
-
+# creating class for "User Interface" 
+class UserInterface:
+# ask for input
+    def input_num (self):
+        inp_num = float(input("ENTER NUMBER: "))
+        return inp_num
+    
 # ask for operation
 # define add functions
 # define subtract functions
