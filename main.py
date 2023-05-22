@@ -3,6 +3,7 @@
 
 from user_interface import UserInterface
 from calculator import Calculator
+import sys
 
 # pseudocode
 user_int = UserInterface()
@@ -22,6 +23,8 @@ try:
 except ValueError:
     print ()
     print ("An ERROR has occured! \nYou need to input float numbers.")
+    print ()
+    sys.exit()
 
 # ask for operation
 inp_operation = user_int.ask_operation()
@@ -50,7 +53,7 @@ try:
     else:
         print ()
         print ("INVALID OPERATION")
-        
+
 # adding ZeroDivisionError limitation
 except ZeroDivisionError:
     print ()
