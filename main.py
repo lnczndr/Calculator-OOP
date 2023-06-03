@@ -7,10 +7,12 @@ import time
 
 from user_interface import UserInterface
 from calculator import Calculator
+from inherit_calc import InheritCalc
 
 # pseudocode
 user_int = UserInterface()
 calcu = Calculator()
+inherit_calc = InheritCalc()
 
 # ask for input
 repeat_prog ="y"
@@ -68,6 +70,13 @@ while repeat_prog =="y":
             quotient = calcu.divide_input (inp_num1, inp_num2)
             user_int.divide_output(quotient)
             time.sleep(1)
+
+        # using the exponent operation
+        elif inp_operation == "**":
+            exponent = inherit_calc.exponent_input (inp_num1, inp_num2)
+            user_int.exponent_output(exponent)
+            time.sleep(1)
+        
 
         else:
             print ("\nINVALID OPERATION! \nChoose only between (+, -, *, /)")
