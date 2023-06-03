@@ -49,3 +49,9 @@ class UserInterface:
         print ("-" * 150)
         print (title)
         print ("-" * 150)
+
+# additional operations:
+# defining exponent operation function
+    def exponent_output (self, exponent):
+        print (Fore.MAGENTA + "\nANSWER: "+ str(exponent) + Style.RESET_ALL)
+        
