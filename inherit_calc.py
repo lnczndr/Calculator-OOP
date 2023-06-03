@@ -2,6 +2,7 @@
 # OOP - Calculator Inheritance
 
 # import calculator.py
+from calculator import Calculator
 
 # make a new class
 
