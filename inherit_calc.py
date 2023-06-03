@@ -16,3 +16,7 @@ class InheritCalc(Calculator):
     def exponent_input (self, inp_num1, inp_num2):
         exponent = inp_num1 ** inp_num2
         return exponent
+
+    def remainder_input(self, inp_num1, inp_num2):
+        remainder = inp_num1 % inp_num2
+        return remainder
