@@ -54,4 +54,7 @@ class UserInterface:
 # defining exponent operation function
     def exponent_output (self, exponent):
         print (Fore.MAGENTA + "\nANSWER: "+ str(exponent) + Style.RESET_ALL)
-        
+
+# defining remainder operation function
+    def remainder_output (self, remainder):
+        print (Fore.MAGENTA + "\nANSWER: "+ str(remainder) + Style.RESET_ALL)
