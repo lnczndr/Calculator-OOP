@@ -15,7 +15,7 @@ class UserInterface:
     
 # ask for operation
     def ask_operation (self):
-        operation = (input(Fore.YELLOW + "ENTER OPERATION (+, -, *, /): " + Style.RESET_ALL))
+        operation = (input(Fore.YELLOW + "ENTER OPERATION (+ (Addition), - (Subtraction), * (Multiplication), / (Division), ** (Exponent/Power), % (Remainder))\n: " + Style.RESET_ALL))
         return operation
     
 # show output for addition
