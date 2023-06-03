@@ -77,9 +77,14 @@ while repeat_prog =="y":
             user_int.exponent_output(exponent)
             time.sleep(1)
         
+        # using the remainder operation
+        elif inp_operation == "%":
+            remainder = inherit_calc.remainder_input (inp_num1, inp_num2)
+            user_int.remainder_output(remainder)
+            time.sleep(1)
 
         else:
-            print ("\nINVALID OPERATION! \nChoose only between (+, -, *, /)")
+            print ("\nINVALID OPERATION! \nChoose only between (+, -, *, /, **, %)")
             print ()
             continue
         time.sleep(1)
